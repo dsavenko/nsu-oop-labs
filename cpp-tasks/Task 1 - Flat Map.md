@@ -62,7 +62,7 @@ std::cout << "Student: " << student["first_name"] << " " << student["last_name"]
 
 Технические требования:
 
-1. Проект должен собираться с помощью CMake. Шаблон проекта для CMake с описанием, как все настроить, см. в папке [cpp-template](../cpp-template).
+1. Проект должен собираться с помощью CMake. Шаблон проекта для CMake с описанием, как все настроить, см. [здесь](https://github.com/dsavenko/nsu-oop-cpp-template).
 2. Должны быть тесты с использованием GoogleTest. В шаблоне для CMake GoogleTest уже подключен, вам лишь нужно их написать.
 
 ## Дополнительно
