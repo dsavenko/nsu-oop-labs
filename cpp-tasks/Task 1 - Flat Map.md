@@ -90,8 +90,7 @@ std::cout << "Student: " << student["first_name"] << " " << student["last_name"]
     // В отличие от operator[] не создает записи для этого ключа, если её ещё нет
     iterator find(const std::string& x);
     ```
-
-    Детали реализации класса `iterator` продумайте сами. Должен работать следующий код:
+    Детали реализации класса/типа `iterator` продумайте сами. Должен работать следующий код:
     ```C++
     // выводит все пары в таблице student в формате "ключ: значение"
     for (auto it = student.begin(); it != student.end(); ++it) {
