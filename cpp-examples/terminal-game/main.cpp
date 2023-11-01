@@ -81,6 +81,8 @@ int main() {
         case ' ': bullets.push_back(Bullet{w, h, now()}); break;
         }
         flushinp();
+        w = std::clamp(w, 1, w1-2);
+        h = std::clamp(h, 1, h1-2);
         out(h, w, "\u2588");
         refresh();
     }
