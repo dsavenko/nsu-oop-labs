@@ -31,7 +31,21 @@ int main() {
     keypad(stdscr, TRUE);
     nodelay(stdscr, TRUE);
 
-    //set_escdelay(0);
+    if (has_colors() == FALSE) {
+        endwin();
+        std::cerr << "Your terminal does not support color\n";
+        exit(1);
+    }
+    start_color();
+
+    const int main_color_pair = 1;
+    const int player_color_pair = 2;
+    const int bullet_color_pair = 3;
+
+    // colors are COLOR_BLACK, COLOR_RED, COLOR_GREEN, COLOR_YELLOW, COLOR_BLUE, COLOR_MAGENTA, COLOR_CYAN, COLOR_WHITE
+    init_pair(main_color_pair, COLOR_WHITE, COLOR_BLACK);
+    init_pair(player_color_pair, COLOR_YELLOW, COLOR_BLUE);
+    init_pair(bullet_color_pair, COLOR_RED, COLOR_BLACK);
 
     int h1, w1;
     getmaxyx(stdscr, h1, w1);
@@ -49,29 +63,31 @@ int main() {
     int z = 0;
     while ('q' != (c = getch())) {
         clear();
+        attron(COLOR_PAIR(bullet_color_pair));
         for (Bullet& b : bullets) {
             if ((now() - b.last_time) / 1ms > 300) {
                 b.h--;
                 b.last_time = now();
             }
-            out(b.h, b.w, "\u25cf");
+            out(b.h, b.w, "*");
         }
+        attroff(COLOR_PAIR(bullet_color_pair));
         bullets.erase(
             std::remove_if(bullets.begin(), bullets.end(), [](const Bullet& b) { return b.h < 2; }),
             bullets.end()
         );
         for (int i = 1; i < w1; ++i) {
-            out(0, i, "\u2501");
-            out(h1-1, i, "\u2501");
+            out(0, i, "-");
+            out(h1-1, i, "-");
         }
         for (int i = 1; i < h1-1; ++i) {
-            out(i, 0, "\u2503");
-            out(i, w1-1, "\u2503");
+            out(i, 0, "|");
+            out(i, w1-1, "|");
         }
-        out(0, 0, "\u250f");
-        out(0, w1-1, "\u2513");
-        out(h1-1, 0, "\u2517");
-        out(h1-1, w1-1, "\u251b");
+        out(0, 0, "+");
+        out(0, w1-1, "+");
+        out(h1-1, 0, "+");
+        out(h1-1, w1-1, "+");
 
         switch(c) {
         case KEY_LEFT: --w; break;
@@ -83,7 +99,9 @@ int main() {
         flushinp();
         w = std::clamp(w, 1, w1-2);
         h = std::clamp(h, 1, h1-2);
-        out(h, w, "\u2588");
+        attron(COLOR_PAIR(player_color_pair));
+        out(h, w, "M");
+        attroff(COLOR_PAIR(player_color_pair));
         refresh();
     }
 
