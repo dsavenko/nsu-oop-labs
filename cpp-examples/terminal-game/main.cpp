@@ -14,7 +14,7 @@ using steady_clock_t = std::chrono::time_point<std::chrono::steady_clock>;
 
 void out(int y, int x, const std::string& s) {
     wmove(stdscr, y, x);
-    wprintw(stdscr, s.c_str());
+    wprintw(stdscr, "%s", s.c_str());
 }
 
 steady_clock_t now() {
@@ -40,7 +40,7 @@ int main() {
     curs_set(FALSE);
     // enable function keys as single character values, like KEY_LEFT, etc.
     keypad(stdscr, TRUE);
-    // set a very small delay in milliseconds for getch/wgetch to wait for input. Without it, getch/wgetch would block
+    // set a very small delay in milliseconds for getch/wgetch to wait for input. Without it, getch/wgetch would block.
     timeout(50);
 
     if (has_colors() == FALSE) {
@@ -73,11 +73,20 @@ int main() {
     };
     std::vector<Bullet> bullets;
 
+    const char* title_format_str = "The terminal game template. Bullets: %lu";
+
     int c;
-    int z = 0;
+    // Main loop of the game. The game scene is rendered each iteration of this loop. 
+    // An iteration of this loop happens either when the user press a key or when getch()'s timeout expires (which is set to 50ms).
+    // This means our game's frame rate (fps) is 20 if user doesn't press anything.
     while ('q' != (c = getch())) {
         // clear the screen
         clear();
+
+        // print title
+        ssize_t title_size = snprintf(NULL, 0, title_format_str, bullets.size());
+        wmove(stdscr, 1, (w1-title_size)/2);
+        wprintw(stdscr, title_format_str, bullets.size());
 
         // display bullets
         attron(COLOR_PAIR(bullet_color_pair));
