@@ -39,7 +39,7 @@ class FlatMap {
     ```C++
     class A {
     public:
-        A(int x, double y, std::string z) {
+        A(int x, double y, const std::string& z) {
             // ...
         }
     }
