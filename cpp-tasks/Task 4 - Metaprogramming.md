@@ -3,10 +3,12 @@
 
 ## Подзадача 1. Кортежи (tuples)
 
-Реализуйте оператор для печати `std::tuple`:
+Реализуйте оператор для печати `std::tuple`. Должен работать код наподобие следующего:
 ```C++
-template <typename Ch, typename Tr, typename... Args>
-auto& operator<<(std::basic_ostream<Ch, Tr>& os, std::tuple<Args...> const& t)
+// может быть любое количество любых типов
+std::tuple<int, std::string, double> t = {5, "abcd", 3.14};
+// выводит (5, abcd, 3.14). Вместо std::cout может быть файловый поток
+std::cout << t; 
 ```
 Вы ограничены возможностями стандарта С++11. Это означает, что нельзя, например, использовать `if constexpr`, `std::integer_sequence/index_sequence` и fold expressions, т.к. они появились в более поздних версиях. Вам нужно решить задачу, используя только рекурсивные шаблоны и специализацию шаблонов.
 
