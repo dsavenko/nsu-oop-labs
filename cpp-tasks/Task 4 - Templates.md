@@ -15,11 +15,11 @@ std::tuple<int, std::string, double> t = {5, "abcd", 3.14};
 // выводит (5, abcd, 3.14). Вместо std::cout может быть файловый поток
 std::cout << t; 
 ```
-Вы ограничены возможностями стандарта С++11. Это означает, что нельзя, например, использовать `if constexpr`, `std::integer_sequence/index_sequence` и fold expressions, т.к. они появились в более поздних версиях.
+Вы ограничены возможностями стандарта С++11. Это означает, что нельзя, например, использовать `if constexpr`, `std::integer_sequence/std::index_sequence` и fold expressions, т.к. они появились в более поздних версиях.
 
 **Дополнительно:** 
 
-1. Сделайте другую реализацию, на этот раз используя `if constexpr`. Возможно, вы также найдете применение `std::integer_sequence/index_sequence` и fold expressions.
+1. Сделайте другую реализацию, на этот раз используя `if constexpr`. Возможно, вы также найдете применение `std::integer_sequence/std::index_sequence` и fold expressions.
 2. Реализуйте собственный вариант шаблонного класса `tuple`.
 
 ## Подзадача 2. Парсер CSV
