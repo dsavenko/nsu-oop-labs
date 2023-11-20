@@ -31,7 +31,6 @@ std::cout << t;
 int main()
 {
     ifstream csv_stream("test.csv");    
-    // может быть любое количество любых типов
     CsvParser<int, std::string, double> parser(csv_stream, 0 /*skip first lines count*/);
     for (std::tuple<int, std::string, double> rs : parser) {
         std::cout << rs << "\n";
