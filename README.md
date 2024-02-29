@@ -3,6 +3,7 @@
 1. [cpp-tasks](cpp-tasks) - задачи по С++.
 2. [cpp-examples](cpp-examples) - примеры кода в помощь при выполнении задач по С++.
 3. [java-tasks](java-tasks) - задачи по Java.
+4. [java-examples](java-examples) - примеры кода в помощь при выполнении задач по Java.
 
 ## Полезные ссылки 
 
