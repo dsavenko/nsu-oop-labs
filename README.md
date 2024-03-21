@@ -4,6 +4,7 @@
 2. [cpp-examples](cpp-examples) - примеры кода в помощь при выполнении задач по С++.
 3. [java-tasks](java-tasks) - задачи по Java.
 4. [java-examples](java-examples) - примеры кода в помощь при выполнении задач по Java.
+5. [java-training](java-training) - небольшие задачи (на 30-40 минут) для тренировки навыков программирования на Java.
 
 ## Полезные ссылки 
 
