@@ -8,7 +8,7 @@
 
 Пример работы с `URL`:
 ```java
-URL url = new URL("https://habr.com/ru/rss/best/daily/");
+URL url = new URL(/**..something...*/);
 URLConnection conn = url.openConnection();
 try (InputStream input = conn.getInputStream()) {
     // do what you need to do
