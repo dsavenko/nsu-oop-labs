@@ -4,7 +4,24 @@
 **Общие условия**
 
 1. Создайте Maven-проект с `groupId = ru.nsu.<ваша фамилия>.http.task<номер задачи>` и `artifactId = main`.
-2. Для работы с HTTP(S) воспользуйтесь классом `URL` и его методом `openConnection`. Для парсинга XML используйте класс `DocumentBuilder`.
+2. Для работы с HTTP(S) воспользуйтесь классом `java.net.URL` и его методом `openConnection`. Для парсинга XML используйте класс `javax.xml.parsers.DocumentBuilder`.
+
+Пример работы с `URL`:
+```java
+URL url = new URL("https://habr.com/ru/rss/best/daily/");
+URLConnection conn = url.openConnection();
+try (InputStream input = conn.getInputStream()) {
+    // do what you need to do
+}
+```
+
+Пример работы с `DocumentBuilder`:
+```java
+DocumentBuilder builder = DocumentBuilderFactory.newDefaultInstance().newDocumentBuilder();
+Document doc = builder.parse(/*...some input here...*/);
+NodeList items = doc.getElementsByTagName(/*...tag name you need...*/);
+// see NodeList javadoc on what to do next
+```
 
 ## Задача 1. Тривиальная читалка RSS
 
