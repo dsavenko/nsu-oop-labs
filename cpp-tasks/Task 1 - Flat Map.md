@@ -99,12 +99,3 @@ std::cout << "Student: " << student["first_name"] << " " << student["last_name"]
         std::cout << it->first << ": " << it->second << "\n";
     }
     ```
-
-4. Превратите ваш класс в шаблонный класс, поддерживающий любые типы ключей (для которых определён `operator<`) и любые типы значений (для которых определён конструктор без параметров).
-
-    ```C++
-    template <class Key, class Value>
-    class FlatMap {
-        // ...
-    }
-    ```
