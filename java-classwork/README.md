@@ -5,3 +5,5 @@
 [Тема 2. Коллекции](https://docs.google.com/document/d/1G5quqz2wthw62l5qvQFX7ijMu7fl_jmJzQDEnb9K-XM/edit?usp=sharing)
 
 [Тема 3. Работа с файлами](https://docs.google.com/document/d/1gq0HUjLKf_TVSnvfv_YwZEfoXAxjsYyDu5v9AohgRwU/edit?usp=sharing)
+
+[Тема 4. Перечисления и обобщения](https://docs.google.com/document/d/1YZS0DuErG_C0HooUkjzQmemjVkCtk710Em4wH6FOkWs/edit?usp=sharing)
