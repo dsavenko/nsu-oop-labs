@@ -7,3 +7,5 @@
 [Тема 3. Работа с файлами](https://docs.google.com/document/d/1gq0HUjLKf_TVSnvfv_YwZEfoXAxjsYyDu5v9AohgRwU/edit?usp=sharing)
 
 [Тема 4. Перечисления и обобщения](https://docs.google.com/document/d/1YZS0DuErG_C0HooUkjzQmemjVkCtk710Em4wH6FOkWs/edit?usp=sharing)
+
+[Тема 5. Основы многопоточного программирования](https://docs.google.com/document/d/18U7fEAukZ-e3-ur8M30jjtLvp8zCWpVgstTo60HuLjc/edit?usp=sharing)
