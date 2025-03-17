@@ -2,9 +2,9 @@ package ru.nsu.dsavenko.examples.mvc.model;
 public class Model implements AutoCloseable {
 
     private final long timeout = 5000;
+    private final Thread thread;
     private int a;
     private int b;
-    private Thread thread;
     private ModelListener listener;
     private State state = State.NO_ANSWER;
 
@@ -27,15 +27,15 @@ public class Model implements AutoCloseable {
         }
     }
 
-    public int getA() {
+    public synchronized int getA() {
         return a;
     }
 
-    public int getB() {
+    public synchronized int getB() {
         return b;
     }
 
-    public State getState() {
+    public synchronized State getState() {
         return state;
     }
 
