@@ -13,3 +13,5 @@
 [Тема 6. Шаблон проектирования Model-View-Controller](https://docs.google.com/document/d/12ufg1YkUk9WST5JlfAd6G2Puq5GYcHTpUBK4aAW7Q90/edit?usp=sharing)
 
 [Тема 7. Основы Swing](https://docs.google.com/document/d/1124-9n9d03K6qHhfwhUvOJUV210GKVs9oNAK4idjhaA/edit?usp=sharing)
+
+[Тема 8. Основы Maven](https://docs.google.com/document/d/1178edb7YnwoO0LH8L8zmFfcZtcEAw90iao4Z0GQRf9A/edit?usp=sharing)
