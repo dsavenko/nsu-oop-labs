@@ -15,3 +15,5 @@
 [Тема 7. Основы Swing](https://docs.google.com/document/d/1124-9n9d03K6qHhfwhUvOJUV210GKVs9oNAK4idjhaA/edit?usp=sharing)
 
 [Тема 8. Основы Maven](https://docs.google.com/document/d/1178edb7YnwoO0LH8L8zmFfcZtcEAw90iao4Z0GQRf9A/edit?usp=sharing)
+
+[Тема 9. Основы работы с сетью](https://docs.google.com/document/d/1N6wpQKmUgN5Y4Oi9kyXMQ4h2eb6NoWTfNNMBDE_JbOg/edit?usp=sharing)
