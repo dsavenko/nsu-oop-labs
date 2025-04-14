@@ -17,3 +17,5 @@
 [Тема 8. Основы Maven](https://docs.google.com/document/d/1178edb7YnwoO0LH8L8zmFfcZtcEAw90iao4Z0GQRf9A/edit?usp=sharing)
 
 [Тема 9. Основы работы с сетью](https://docs.google.com/document/d/1N6wpQKmUgN5Y4Oi9kyXMQ4h2eb6NoWTfNNMBDE_JbOg/edit?usp=sharing)
+
+[Тема 10. Работа с HTTP(S), XML, сериализация](https://docs.google.com/document/d/1EpNinWSavWF1_tNWv7Nsda1nrgGb_xH1TBKOQZTORBo/edit?usp=sharing)
