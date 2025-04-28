@@ -19,3 +19,5 @@
 [Тема 9. Основы работы с сетью](https://docs.google.com/document/d/1N6wpQKmUgN5Y4Oi9kyXMQ4h2eb6NoWTfNNMBDE_JbOg/edit?usp=sharing)
 
 [Тема 10. Работа с HTTP(S), XML, сериализация](https://docs.google.com/document/d/1EpNinWSavWF1_tNWv7Nsda1nrgGb_xH1TBKOQZTORBo/edit?usp=sharing)
+
+[Тема 11. Основы java.util.concurrent](https://docs.google.com/document/d/1Dj1B0beH8pf-NNIAB3sspMiELY8xvnUE47m6TYXbjO0/edit?usp=sharing)
