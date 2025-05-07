@@ -10,7 +10,7 @@
 <TIMESTAMP>,<TICKER>,<PRICE>
 ```
 где:
-1. `<TIMESTAMP>` - целое число, время события в миллисекундах [от начала эпрохи](https://en.wikipedia.org/wiki/Unix_time) (текущее время в таком формате возвращает `System.currentTimeMillis`).
+1. `<TIMESTAMP>` - целое число, время события в миллисекундах [от начала эпохи](https://en.wikipedia.org/wiki/Unix_time) (текущее время в таком формате возвращает `System.currentTimeMillis`).
 2. `<TICKER>` - строка, биржевой тикер (краткое название акции). Используйте реальные значения. Взять их можно, например, [отсюда](https://github.com/rreichel3/US-Stock-Symbols/blob/main/all/all_tickers.txt). Не нужно использовать их все, выберите небольшое подможество (несколько сотен).
 3. `<PRICE>` - цена, число с плавающей точкой.
 
