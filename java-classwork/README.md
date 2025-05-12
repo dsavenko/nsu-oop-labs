@@ -23,3 +23,5 @@
 [Тема 11. Основы java.util.concurrent](https://docs.google.com/document/d/1Dj1B0beH8pf-NNIAB3sspMiELY8xvnUE47m6TYXbjO0/edit?usp=sharing)
 
 [Тема 12. Средства синхронизации потоков](https://docs.google.com/document/d/1eAd2BQlFBtPNgLTgtM0RFKueWQ6MwS4w6H3DZnjzUcU/edit?usp=sharing)
+
+[Тема 13. Паттерны проектирования](https://docs.google.com/document/d/1JFe4PtWug-xmUmttj2ZwqZ2IlkkMZ9C9L6DuCLWIdmg/edit?usp=sharing)
