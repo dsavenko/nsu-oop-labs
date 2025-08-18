@@ -31,8 +31,8 @@ public:
     std::string get(std::size_t index);
 
 private:
-    std::string* data_; // массив с данными
-    std::size_t size_;  // текущий размер массива с данными (количество элементов)
+    std::string* data_; // массив
+    std::size_t size_;  // текущий размер массива (количество элементов)
 }
 ```
 
