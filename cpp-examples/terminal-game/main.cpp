@@ -84,7 +84,7 @@ int main() {
         clear();
 
         // print title
-        ssize_t title_size = snprintf(NULL, 0, title_format_str, bullets.size());
+        int title_size = snprintf(NULL, 0, title_format_str, bullets.size());
         wmove(stdscr, 1, (w1-title_size)/2);
         wprintw(stdscr, title_format_str, bullets.size());
 
